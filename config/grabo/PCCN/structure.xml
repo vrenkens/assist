@@ -1,0 +1,60 @@
+<structure>
+  <types>
+    <direction supertype="enumerable">
+      forward
+      backward
+    </direction>
+    <distance supertype="enumerable">
+      little
+      normal
+      alot
+    </distance>
+    <throttle supertype="enumerable">
+      slow
+      fast
+    </throttle>
+    <pos_x supertype="enumerable">
+      left
+      centerx
+      right
+    </pos_x>
+    <pos_y supertype="enumerable">
+      up
+      centery
+      down
+    </pos_y>
+    <rel_angle supertype="enumerable">
+      west
+      east
+      south
+    </rel_angle>
+    <abs_angle supertype="enumerable">
+      west
+      east
+      north
+      south
+    </abs_angle>
+    <position supertype="enumerable">
+      up
+      down
+    </position>
+    <grabber supertype="enumerable">
+      close
+      open
+    </grabber>
+    <pointerstate supertype="enumerable">
+      on
+      off
+    </pointerstate>
+  </types>
+  <tasks>
+    <move_rel direction="direction" distance="distance" throttle="throttle"/>
+    <move_abs pos_x="pos_x" pos_y="pos_y" throttle="throttle"/>
+    <turn_rel angle="rel_angle" throttle="throttle"/>
+    <turn_abs angle="abs_angle"/>
+    <lift position="position"/>
+    <approach throttle="throttle"/>
+    <pointer state="pointerstate"/>
+    <grab grabber="grabber"/>
+  </tasks>
+</structure>

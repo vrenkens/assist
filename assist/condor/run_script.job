@@ -1,0 +1,30 @@
+# Normal execution
+Universe         = vanilla
+requestCpus      = 4
+RequestMemory    = 16G
+#request a day of wall time
++RequestWalltime = 86400
+Requirements = has_avx\
+  &&(machine != "zulte.esat.kuleuven.be")
+
+#Specfy nice user behavior
+NiceUser = true
+#Send an email in case of an error
+Notification = Error
+
+initialdir = .
+
+#Run he build cluster script for the parameter server
+Arguments = "python -um assist.scripts.$(script) $(expdir)"
+# This is the executable or script I want to run
+executable = assist/condor/create_environment.sh
+
+#Output of condors handling of the jobs, will be in 'initialdir'
+Log          = $(expdir)/outputs/$(script).log
+#Standard output of the 'executable', in 'initialdir'
+Output       = $(expdir)/outputs/$(script).out
+#Standard error of the 'executable', in 'initialdir'
+Error        = $(expdir)/outputs/$(script).err
+
+# Queue however many parameter servers were requested
+Queue 1

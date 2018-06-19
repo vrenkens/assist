@@ -1,0 +1,6 @@
+# ignore compiled code
+*.pyc
+database.cfg
+cluster
+assist/condor/create_environment.sh
+sweeps

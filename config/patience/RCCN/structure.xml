@@ -1,0 +1,47 @@
+<structure>
+  <types>
+    <suit supertype="enumerable">
+      h
+      d
+      c
+      s
+    </suit>
+    <value supertype="enumerable">
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      9
+      10
+      11
+      12
+      13
+    </value>
+    <foundation supertype="enumerable">
+      1
+      2
+      3
+      4
+    </foundation>
+    <fieldcol supertype="enumerable">
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+    </fieldcol>
+    <bool supertype="enumerable">
+      1
+    </bool>
+  </types>
+  <tasks>
+    <movecard from_fieldcol="fieldcol" from_foundation="foundation" from_hand="bool" from_suit="suit" from_value="value" target_fieldcol="fieldcol" target_fieldcolempty="bool" target_foundation="foundation" target_foundationempty="bool" target_suit="suit" target_value="value" />
+    <dealcard/>
+  </tasks>
+</structure>

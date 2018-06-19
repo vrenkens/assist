@@ -1,0 +1,41 @@
+<structure>
+  <types>
+    <phonecommand supertype="enumerable">
+      Call
+      Text
+    </phonecommand>
+    <person supertype="enumerable">
+      Stephanie
+      Mom
+    </person>
+    <TVshow supertype="enumerable">
+      Funny
+      Game
+    </TVshow>
+    <day supertype="enumerable">
+      Now
+      Tomorrow
+    </day>
+    <playlist supertype="enumerable">
+      Jazz
+      Favorites
+      Sunday
+    </playlist>
+    <GPScommand supertype="enumerable">
+      Go
+      Traffic
+    </GPScommand>
+    <place supertype="enumerable">
+      Home
+      Office
+    </place>
+  </types>
+  <tasks>
+    <phone command="phonecommand" person="person"/>
+    <TV show="TVshow"/>
+    <wheater day="day"/>
+    <music playlist="playlist"/>
+    <skipsong/>
+    <GPS command="GPScommand" destination="place"/>
+  </tasks>
+</structure>

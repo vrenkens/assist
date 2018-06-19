@@ -1,0 +1,46 @@
+<structure>
+  <types>
+    <light supertype="enumerable">
+      woonkamerlicht
+      alleLichten
+      badkamerlicht
+      keukenlicht
+      leeslamp
+      slaapkamerlicht
+    </light>
+    <lightstate supertype="enumerable">
+      Aan
+      Uit
+    </lightstate>
+    <door supertype="enumerable">
+      voordeur
+      badkamerdeur
+      rolluikSlaapkamer
+      rolluikWoonkamer
+      slaapkamerdeur
+      rolluikWoonkamerDeur
+    </door>
+    <doorstate supertype="enumerable">
+      Open
+      Dicht
+    </doorstate>
+    <stance supertype="enumerable">
+      Stand1
+      Stand2
+      Stand3
+    </stance>
+    <setable supertype="enumerable">
+      hoofdeinde
+      staandeLamp
+    </setable>
+    <change supertype="enumerable">
+      Hoger
+    </change>
+  </types>
+  <tasks>
+    <lightswitch light="light" state="lightstate"/>
+    <doorcontroll door="door" state="doorstate"/>
+    <setstance stance="stance" toset="setable"/>
+    <heating change="change"/>
+  </tasks>
+</structure>
